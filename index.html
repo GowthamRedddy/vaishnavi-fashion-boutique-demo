@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaishnavi Fashion's — Sarees Wholesale & Retail | Kukatpally, Hyderabad</title>
+<meta name="description" content="Vaishnavi Fashion's — mini Kanchi pattu sarees and ethnic wear, wholesale and retail. Branches: Kukatpally, Boduppal, Kothapet. WhatsApp for price list and orders.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#0f5e5c; --teal-dark:#083f3e;
+    --saffron:#e8930c; --saffron-soft:#f7c868;
+    --sand:#faf6ee; --ink:#1d2b2a; --muted:#6d7f7d;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Karla',sans-serif;background:var(--sand);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif}
+
+  .demo-ribbon{position:fixed;top:14px;right:-46px;z-index:1001;background:var(--teal-dark);color:var(--saffron-soft);
+    font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;padding:6px 50px;transform:rotate(45deg);
+    border:1px solid var(--saffron);box-shadow:0 2px 8px rgba(0,0,0,.35)}
+
+  header{position:sticky;top:0;z-index:1000;background:rgba(15,94,92,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(232,147,12,.5)}
+  .nav{max-width:1100px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .brand{display:flex;flex-direction:column;line-height:1.15}
+  .brand .name{font-family:'Fraunces',serif;font-size:1.3rem;color:#fff;letter-spacing:.02em}
+  .brand .tag{font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:var(--saffron-soft)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:999px;
+    text-decoration:none;font-weight:500;font-size:.95rem;transition:transform .15s ease,background .15s ease;cursor:pointer;border:none}
+  .btn:active{transform:scale(.97)}
+  .btn-wa{background:#1faa53;color:#fff;box-shadow:0 4px 14px rgba(31,170,83,.35)}
+  .btn-wa:hover{background:#178a43}
+  .btn-saffron{background:var(--saffron);color:#3d2400;box-shadow:0 4px 14px rgba(232,147,12,.35)}
+  .btn-outline{border:1.5px solid var(--saffron);color:var(--saffron-soft);background:transparent}
+  .btn-outline:hover{background:rgba(232,147,12,.12)}
+  .btn-sm{padding:9px 16px;font-size:.85rem}
+  .wa-ico{width:17px;height:17px;fill:currentColor;flex:none}
+
+  .hero{position:relative;text-align:center;color:#fff;padding:86px 22px 96px;overflow:hidden;
+    background:radial-gradient(1000px 500px at 20% -10%, rgba(232,147,12,.25), transparent 60%),
+      linear-gradient(160deg, var(--teal) 0%, var(--teal-dark) 82%)}
+  .hero::before,.hero::after{content:"";position:absolute;left:50%;transform:translateX(-50%);width:min(540px,80%);height:1px;
+    background:linear-gradient(90deg,transparent,var(--saffron),transparent)}
+  .hero::before{top:32px}.hero::after{bottom:32px}
+  .hero .kicker{display:inline-block;font-size:.7rem;letter-spacing:.32em;text-transform:uppercase;color:var(--saffron-soft);
+    border:1px solid rgba(232,147,12,.5);padding:7px 16px;border-radius:999px;margin-bottom:26px}
+  .hero h1{font-size:clamp(2rem,6vw,3.4rem);font-weight:600;line-height:1.15;max-width:740px;margin:0 auto 18px}
+  .hero h1 em{font-style:italic;color:var(--saffron-soft)}
+  .hero p.sub{max-width:600px;margin:0 auto 32px;color:rgba(255,255,255,.85);font-weight:300}
+  .mode-badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:32px}
+  .badge{font-size:.78rem;letter-spacing:.08em;font-weight:600;color:var(--teal-dark);background:var(--saffron-soft);
+    border-radius:999px;padding:7px 18px}
+  .badge.alt{background:transparent;color:var(--saffron-soft);border:1px solid rgba(232,147,12,.5)}
+  .hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+  section{padding:70px 22px}
+  .container{max-width:1100px;margin:auto}
+  .sec-head{text-align:center;margin-bottom:42px}
+  .sec-head .eyebrow{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--saffron);font-weight:600}
+  .sec-head h2{font-size:clamp(1.6rem,4.5vw,2.3rem);color:var(--teal);margin-top:8px}
+  .divider{width:70px;height:2px;margin:16px auto 0;background:linear-gradient(90deg,transparent,var(--saffron),transparent)}
+
+  .about-card{background:#fff;border:1px solid #dde7e2;border-radius:18px;padding:34px 30px;max-width:860px;
+    margin:auto;box-shadow:0 10px 30px rgba(8,63,62,.06)}
+  .about-card p{color:#394b48;font-weight:300}
+  .about-card p+p{margin-top:14px}
+  .about-card strong{color:var(--teal)}
+
+  #services{background:#fff}
+  .svc-grid{display:grid;gap:18px;grid-template-columns:1fr}
+  .svc{border:1px solid #dde7e2;border-radius:16px;padding:26px 24px;background:var(--sand);transition:transform .18s ease,box-shadow .18s ease}
+  .svc:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(8,63,62,.1)}
+  .svc .ico{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(150deg,var(--teal),var(--teal-dark));color:var(--saffron-soft);font-size:1.25rem;margin-bottom:14px;
+    border:1px solid rgba(232,147,12,.5)}
+  .svc h3{color:var(--teal);font-size:1.12rem;margin-bottom:6px}
+  .svc p{font-size:.92rem;color:var(--muted);font-weight:300}
+
+  .price-strip{max-width:860px;margin:34px auto 0;background:linear-gradient(150deg,var(--teal),var(--teal-dark));
+    border:1px solid rgba(232,147,12,.5);border-radius:16px;padding:28px;text-align:center;color:#fff}
+  .price-strip h3{color:var(--saffron-soft);font-size:1.2rem;margin-bottom:8px}
+  .price-strip p{font-weight:300;font-size:.92rem;color:rgba(255,255,255,.85)}
+  .price-strip .btn{margin-top:16px}
+
+  .gal-note{max-width:640px;margin:0 auto 30px;text-align:center;font-size:.85rem;color:var(--muted);font-style:italic}
+  .gal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:860px;margin:auto}
+  .gal-item{position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;display:flex;align-items:flex-end;
+    background:radial-gradient(240px 160px at 30% 20%, rgba(232,147,12,.25), transparent 65%),
+      linear-gradient(155deg,var(--teal) 0%,var(--teal-dark) 85%);border:1px solid rgba(232,147,12,.5)}
+  .gal-item .cap{width:100%;padding:14px;color:var(--saffron-soft);font-size:.8rem;letter-spacing:.06em;
+    background:linear-gradient(0deg,rgba(6,40,39,.85),transparent)}
+  .gal-item .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    color:rgba(247,200,104,.4);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}
+  .gal-item.wide{grid-column:span 2;aspect-ratio:16/9}
+
+  #why-us{background:linear-gradient(160deg,var(--teal),var(--teal-dark));color:#fff}
+  #why-us .sec-head h2,#why-us .sec-head .eyebrow{color:var(--saffron-soft)}
+  .why-grid{display:grid;gap:16px;grid-template-columns:1fr;max-width:860px;margin:auto}
+  .why{display:flex;gap:16px;align-items:flex-start;background:rgba(255,255,255,.06);border:1px solid rgba(232,147,12,.35);border-radius:14px;padding:20px 22px}
+  .why .n{font-family:'Fraunces',serif;color:var(--saffron-soft);font-size:1.5rem;line-height:1;min-width:34px}
+  .why h3{font-size:1.02rem;color:#fff;margin-bottom:4px;font-family:'Karla',sans-serif;font-weight:600}
+  .why p{font-size:.88rem;color:rgba(255,255,255,.78);font-weight:300}
+
+  .branches{display:grid;gap:16px;max-width:960px;margin:auto}
+  .branch{background:#fff;border:1px solid #dde7e2;border-radius:16px;padding:24px 26px}
+  .branch h3{color:var(--teal);margin-bottom:6px;font-size:1.1rem}
+  .branch p{color:#394b48;font-weight:300;font-size:.9rem}
+  .branch .btn{margin-top:14px;margin-right:10px}
+  .btn-map{background:var(--teal);color:#fff}
+  .btn-call{background:#fff;color:var(--teal);border:1.5px solid var(--teal)}
+  .btn-call:hover{background:var(--sand)}
+
+  .contact-wrap{max-width:720px;margin:auto;text-align:center}
+  .contact-wrap p.lead{color:var(--muted);font-weight:300;max-width:540px;margin:0 auto 30px}
+  .contact-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:26px}
+  .contact-meta{font-size:.9rem;color:var(--muted)}
+  .contact-meta strong{color:var(--teal)}
+
+  footer{background:var(--teal-dark);color:rgba(255,255,255,.7);text-align:center;padding:34px 22px 110px;font-size:.82rem;font-weight:300}
+  footer .fbrand{font-family:'Fraunces',serif;color:var(--saffron-soft);font-size:1.15rem;margin-bottom:6px}
+  footer .demo-note{margin-top:10px;font-size:.7rem;letter-spacing:.08em;color:rgba(255,255,255,.45)}
+
+  .mobile-bar{position:fixed;bottom:0;left:0;right:0;z-index:1000;display:flex;gap:10px;
+    padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);
+    backdrop-filter:blur(10px);border-top:1px solid #dde7e2;box-shadow:0 -6px 20px rgba(8,63,62,.08)}
+  .mobile-bar .btn{flex:1;padding:14px 10px}
+
+  @media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:1fr 1fr}.branches{grid-template-columns:1fr 1fr}}
+  @media(min-width:640px){.branches{grid-template-columns:repeat(3,1fr)}}
+  @media(min-width:900px){.svc-grid{grid-template-columns:repeat(3,1fr)}.gal-grid{grid-template-columns:repeat(3,1fr)}section{padding:86px 22px}footer{padding-bottom:40px}.mobile-bar{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-ribbon">Demo</div>
+
+<header>
+  <nav class="nav">
+    <div class="brand">
+      <span class="name">Vaishnavi Fashion's</span>
+      <span class="tag">Sarees · Wholesale &amp; Retail</span>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-wa btn-sm" href="https://wa.me/918328419758?text=Hi%20Vaishnavi%20Fashion%27s%2C%20I%20saw%20your%20website%20and%20I%27d%20like%20to%20know%20your%20collection%20and%20prices." target="_blank" rel="noopener">
+        <svg class="wa-ico" viewBox="0 0 24 24"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.96L2 22l5.18-1.5A9.9 9.9 0 1 0 12.04 2Zm5.8 14.03c-.25.7-1.44 1.33-1.99 1.38-.55.06-1.07.25-3.6-.75-3.05-1.2-4.98-4.35-5.13-4.55-.15-.2-1.22-1.63-1.22-3.1 0-1.48.77-2.2 1.04-2.5.28-.3.6-.38.8-.38h.58c.18 0 .43-.07.67.51.25.6.85 2.07.92 2.22.08.15.13.33.03.53-.1.2-.15.33-.3.5-.15.18-.31.4-.45.53-.15.15-.3.31-.13.61.18.3.79 1.3 1.69 2.1 1.16 1.03 2.14 1.35 2.44 1.5.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.22.58.35.07.13.07.75-.18 1.46Z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <span class="kicker">Mini Kanchi Pattu · Ethnic Wear</span>
+  <h1>Sarees for every occasion, <em>at source prices</em></h1>
+  <p class="sub">Mini Kanchi pattu sarees and ethnic wear — available wholesale and retail across our three Hyderabad branches.</p>
+  <div class="mode-badges">
+    <span class="badge">WHOLESALE</span>
+    <span class="badge alt">RETAIL</span>
+  </div>
+  <div class="hero-actions">
+    <a class="btn btn-wa" href="https://wa.me/918328419758?text=Hi%20Vaishnavi%20Fashion%27s%2C%20please%20share%20your%20latest%20wholesale%20price%20list." target="_blank" rel="noopener">
+      <svg class="wa-ico" viewBox="0 0 24 24"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.96L2 22l5.18-1.5A9.9 9.9 0 1 0 12.04 2Zm5.8 14.03c-.25.7-1.44 1.33-1.99 1.38-.55.06-1.07.25-3.6-.75-3.05-1.2-4.98-4.35-5.13-4.55-.15-.2-1.22-1.63-1.22-3.1 0-1.48.77-2.2 1.04-2.5.28-.3.6-.38.8-.38h.58c.18 0 .43-.07.67.51.25.6.85 2.07.92 2.22.08.15.13.33.03.53-.1.2-.15.33-.3.5-.15.18-.31.4-.45.53-.15.15-.3.31-.13.61.18.3.79 1.3 1.69 2.1 1.16 1.03 2.14 1.35 2.44 1.5.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.22.58.35.07.13.07.75-.18 1.46Z"/></svg>
+      Get Price List
+    </a>
+    <a class="btn btn-outline" href="#branches">Find a branch</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">About Us</span>
+      <h2>From handloom to your doorstep</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="about-card">
+      <p><strong>Vaishnavi Fashion's</strong> brings you mini Kanchi pattu sarees and ethnic wear at genuine wholesale and retail prices — refined tradition at a refined statement.</p>
+      <p>With branches in <strong>Kukatpally, Boduppal and Kothapet</strong>, we serve walk-in customers daily and supply bulk orders to shops and resellers across Telangana. Every new collection is first announced on WhatsApp — message us to be on the list.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Collections</span>
+      <h2>What we stock</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="ico">🥻</div><h3>Mini Kanchi Pattu Sarees</h3><p>Our signature range — traditional pattu sarees in the latest colourways.</p></div>
+      <div class="svc"><div class="ico">🛍️</div><h3>Wholesale Supply</h3><p>Bulk rates for resellers and shops — order by WhatsApp, delivered across the state.</p></div>
+      <div class="svc"><div class="ico">🏬</div><h3>Retail Showroom</h3><p>Walk in to any of our three branches and browse the full collection in person.</p></div>
+      <div class="svc"><div class="ico">🎨</div><h3>Festive &amp; Wedding Range</h3><p>Seasonal collections for weddings, festivals and gifting occasions.</p></div>
+      <div class="svc"><div class="ico">📦</div><h3>Bulk &amp; Reseller Orders</h3><p>Consistent stock, honest pricing, and priority service for our wholesale partners.</p></div>
+      <div class="svc"><div class="ico">💬</div><h3>WhatsApp Catalogue</h3><p>New arrivals with prices shared directly on WhatsApp — retail and wholesale.</p></div>
+    </div>
+    <div class="price-strip">
+      <h3>Reseller? Shop owner?</h3>
+      <p>Get our latest wholesale price list on WhatsApp — new mini Kanchi pattu stock arriving regularly.</p>
+      <a class="btn btn-saffron" href="https://wa.me/918328419758?text=Hi%2C%20I%20run%20a%20shop%20and%20I%27d%20like%20your%20wholesale%20price%20list." target="_blank" rel="noopener">Request Wholesale Rates</a>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Gallery</span>
+      <h2>Fresh arrivals</h2>
+      <div class="divider"></div>
+    </div>
+    <p class="gal-note">Demo placeholder frames — the final site will feature real photos of Vaishnavi Fashion's own stock (shared with approval).</p>
+    <div class="gal-grid">
+      <div class="gal-item"><span class="ph">Photo placeholder</span><div class="cap">Mini Kanchi pattu — new shades</div></div>
+      <div class="gal-item"><span class="ph">Photo placeholder</span><div class="cap">Festive collection</div></div>
+      <div class="gal-item"><span class="ph">Photo placeholder</span><div class="cap">Wholesale bundle packs</div></div>
+      <div class="gal-item wide"><span class="ph">Photo placeholder</span><div class="cap">This month's arrivals — in all branches</div></div>
+      <div class="gal-item"><span class="ph">Photo placeholder</span><div class="cap">Wedding selection</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="why-us">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2>Why customers &amp; resellers trust us</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why"><span class="n">01</span><div><h3>Wholesale &amp; retail, honestly priced</h3><p>Direct rates whether you buy one saree or a hundred.</p></div></div>
+      <div class="why"><span class="n">02</span><div><h3>Three branches, one standard</h3><p>Kukatpally, Boduppal and Kothapet — the same collection everywhere.</p></div></div>
+      <div class="why"><span class="n">03</span><div><h3>Always something new</h3><p>Fresh mini Kanchi pattu stock announced first on WhatsApp.</p></div></div>
+      <div class="why"><span class="n">04</span><div><h3>Bulk-friendly service</h3><p>Resellers get priority allocation on fast-moving colours and designs.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="branches">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Visit Us</span>
+      <h2>Our three branches</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="branches">
+      <div class="branch">
+        <h3>📍 Kukatpally</h3>
+        <p>Vaishnavi Fashion's — Kukatpally, Hyderabad.</p>
+        <a class="btn btn-map btn-sm" href="https://www.google.com/maps/search/?api=1&query=Vaishnavi+Fashion+Kukatpally+Hyderabad" target="_blank" rel="noopener">Maps</a>
+        <a class="btn btn-call btn-sm" href="tel:+918328419758">Call</a>
+      </div>
+      <div class="branch">
+        <h3>📍 Boduppal</h3>
+        <p>Vaishnavi Fashion's — Boduppal, Hyderabad.</p>
+        <a class="btn btn-map btn-sm" href="https://www.google.com/maps/search/?api=1&query=Vaishnavi+Fashion+Boduppal+Hyderabad" target="_blank" rel="noopener">Maps</a>
+        <a class="btn btn-call btn-sm" href="tel:+918328419758">Call</a>
+      </div>
+      <div class="branch">
+        <h3>📍 Kothapet</h3>
+        <p>Vaishnavi Fashion's — Kothapet, Hyderabad.</p>
+        <a class="btn btn-map btn-sm" href="https://www.google.com/maps/search/?api=1&query=Vaishnavi+Fashion+Kothapet+Hyderabad" target="_blank" rel="noopener">Maps</a>
+        <a class="btn btn-call btn-sm" href="tel:+918328419758">Call</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact-wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Message us for today's rates</h2>
+      <div class="divider"></div>
+    </div>
+    <p class="lead">Retail customer or wholesale buyer — one message gets you the latest collection and prices.</p>
+    <div class="contact-actions">
+      <a class="btn btn-wa" href="https://wa.me/918328419758?text=Hi%20Vaishnavi%20Fashion%27s%2C%20I%27d%20like%20to%20see%20your%20latest%20collection." target="_blank" rel="noopener">
+        <svg class="wa-ico" viewBox="0 0 24 24"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.96L2 22l5.18-1.5A9.9 9.9 0 1 0 12.04 2Zm5.8 14.03c-.25.7-1.44 1.33-1.99 1.38-.55.06-1.07.25-3.6-.75-3.05-1.2-4.98-4.35-5.13-4.55-.15-.2-1.22-1.63-1.22-3.1 0-1.48.77-2.2 1.04-2.5.28-.3.6-.38.8-.38h.58c.18 0 .43-.07.67.51.25.6.85 2.07.92 2.22.08.15.13.33.03.53-.1.2-.15.33-.3.5-.15.18-.31.4-.45.53-.15.15-.3.31-.13.61.18.3.79 1.3 1.69 2.1 1.16 1.03 2.14 1.35 2.44 1.5.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.22.58.35.07.13.07.75-.18 1.46Z"/></svg>
+        Chat on WhatsApp
+      </a>
+      <a class="btn btn-saffron" href="tel:+918328419758">Call 83284 19758</a>
+    </div>
+    <p class="contact-meta"><strong>Vaishnavi Fashion's</strong> · Kukatpally · Boduppal · Kothapet, Hyderabad</p>
+  </div>
+</section>
+
+<footer>
+  <div class="fbrand">Vaishnavi Fashion's</div>
+  <div>Mini Kanchi Pattu Sarees · Wholesale &amp; Retail</div>
+  <div>Kukatpally · Boduppal · Kothapet, Hyderabad · +91 83284 19758</div>
+  <div class="demo-note">⚠ DEMO WEBSITE — created for presentation purposes only. Not the official website of Vaishnavi Fashion's.</div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn btn-call" href="tel:+918328419758">📞 Call</a>
+  <a class="btn btn-wa" href="https://wa.me/918328419758?text=Hi%20Vaishnavi%20Fashion%27s%2C%20I%20saw%20your%20website%20and%20I%27d%20like%20to%20know%20your%20collection%20and%20prices." target="_blank" rel="noopener">
+    <svg class="wa-ico" viewBox="0 0 24 24"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.96L2 22l5.18-1.5A9.9 9.9 0 1 0 12.04 2Zm5.8 14.03c-.25.7-1.44 1.33-1.99 1.38-.55.06-1.07.25-3.6-.75-3.05-1.2-4.98-4.35-5.13-4.55-.15-.2-1.22-1.63-1.22-3.1 0-1.48.77-2.2 1.04-2.5.28-.3.6-.38.8-.38h.58c.18 0 .43-.07.67.51.25.6.85 2.07.92 2.22.08.15.13.33.03.53-.1.2-.15.33-.3.5-.15.18-.31.4-.45.53-.15.15-.3.31-.13.61.18.3.79 1.3 1.69 2.1 1.16 1.03 2.14 1.35 2.44 1.5.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.22.58.35.07.13.07.75-.18 1.46Z"/></svg>
+    WhatsApp Order
+  </a>
+</div>
+
+</body>
+</html>
